@@ -223,7 +223,7 @@ function setupGallery() {
     const image = $("img", card);
     if (!image) return;
 
-    const path = `./images/${card.dataset.photo}`;
+    const path = `./${card.dataset.photo}`;
 
     image.addEventListener("load", () => {
       card.classList.add("has-photo");
